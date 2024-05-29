@@ -31,3 +31,28 @@
     text-align: right;
     color: white;
 }
+
+button{
+    width: 100px;
+    z-index: 1;
+    height: 80px;
+    background: #ee0303;
+    color: #fff;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 30%;
+    font-size: 2rem;
+}
+
+button.btn_lft{
+    position: relative;
+    left: 20px;
+    bottom: 85px;
+}
+
+button.btn_rgt{
+    position: relative;
+    right: 20px;
+    bottom: 85px;
+}
