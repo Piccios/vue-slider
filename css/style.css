@@ -13,9 +13,11 @@
 
 .item {
     float: left;
-    width: 700px;
-    height: 600px;
+    width: 100%;
+    height: 100%;
     position: relative;
+    box-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+    border-radius: 2rem;
 }
 
 .item[v-show="true"] {
