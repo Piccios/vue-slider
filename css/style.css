@@ -15,7 +15,11 @@
     float: left;
     width: 700px;
     height: 600px;
-    position: relative;;
+    position: relative;
+}
+
+.item[v-show="true"] {
+    display: block;
 }
 
 .item img {
