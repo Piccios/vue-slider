@@ -13,28 +13,35 @@
 </head>
 
 <body>
-    <div id="app">
-        <div class="container">
-            <div class="button">
-                <button class="btn_lft" @click="prevSlide"><i class="fa-solid fa-caret-left"></i></button>
-            </div>
-            <div class="slider-wrapper" tabindex="0">
-                <div class="item" v-for="(slide, index) in slides" :key="index" v-show="currentIndex === index">
-                    <img :src="slide.image" :alt="slide.title" />
-                    <div class="text">
-                        <h3>
-                            {{slide.title}}
-                        </h3>
-                        <p>
-                            {{slide.text}}
-                        </p>
+    <header>
+        <div class="thumbnail">
+            
+        </div>
+    </header>
+    <main>
+        <div id="app">
+            <div class="container">
+                <div class="button">
+                    <button class="btn_lft" @click="prevSlide"><i class="fa-solid fa-caret-left"></i></button>
+                </div>
+                <div class="slider-wrapper" tabindex="0">
+                    <div class="item" v-for="(slide, index) in slides" :key="index" v-show="currentIndex === index">
+                        <img :src="slide.image" :alt="slide.title" />
+                        <div class="text">
+                            <h3>
+                                {{slide.title}}
+                            </h3>
+                            <p>
+                                {{slide.text}}
+                            </p>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="button">
+                <div class="button">
                     <button class="btn_rgt" @click="nextSlide"><i class="fa-solid fa-caret-right"></i></button>
-        </div>
-    </div>
+                </div>
+            </div>
+    </main>
 
     <script src='https://unpkg.com/vue@3/dist/vue.global.js'></script>
     <script src="./js/script.js"></script>
